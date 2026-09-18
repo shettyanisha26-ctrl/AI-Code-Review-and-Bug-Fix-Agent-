@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Code Review & Bug Fix Agent</title>
+    <meta name="description" content="AI-powered code review and bug fixing that helps you find errors, understand problems, and improve your code in seconds.">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- A. Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span style="font-size: 1.5rem;">✨</span>
+            CodeFix AI
+        </div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#about">About</a>
+        </div>
+        <div class="nav-cta">
+            <a href="#start" class="btn btn-primary">Get Started</a>
+        </div>
+        <button class="hamburger" aria-label="Toggle Navigation">
+            ☰
+        </button>
+    </nav>
+
+    <!-- B. Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content fade-in">
+            <div class="badge">✨ AI-Powered Code Analysis</div>
+            <h1>Write Better Code.<br><span class="gradient-text">Fix Bugs Faster.</span></h1>
+            <p>AI-powered code review and bug fixing that helps you find errors, understand problems, and improve your code in seconds.</p>
+            <div class="hero-buttons">
+                <a href="#start" class="btn btn-primary">Start Reviewing Code</a>
+                <a href="#how-it-works" class="btn btn-secondary">See How It Works</a>
+            </div>
+        </div>
+        
+        <div class="hero-visual fade-in">
+            <div class="code-editor-card">
+                <div class="editor-header">
+                    <div class="dot dot-red"></div>
+                    <div class="dot dot-yellow"></div>
+                    <div class="dot dot-green"></div>
+                </div>
+                <div class="editor-body">
+                    <span class="code-line"><span class="keyword">def</span> <span class="function">calculate_total</span>(price, quantity):</span>
+                    <span class="code-line">    total = price * quantity</span>
+                    <span class="code-line">    <span class="keyword">return</span> total</span>
+                    <span class="code-line"></span>
+                    <span class="code-line">result = <span class="function">calculate_total</span>(<span class="number">100</span>, <span class="number">3</span>)</span>
+                    <span class="code-line bug-highlight">print(reslt) <span style="color:#8b949e;"># NameError: name 'reslt' is not defined</span></span>
+                </div>
+            </div>
+            
+            <div class="ai-review-panel">
+                <h4>AI Review</h4>
+                <div class="review-item"><span class="text-success">✓</span> Code analyzed</div>
+                <div class="review-item"><span class="text-warning">⚠</span> 1 improvement suggested</div>
+                <div class="review-item"><span class="text-success">✓</span> No critical syntax errors</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- C. Trust / Technology Strip -->
+    <section class="trust-strip">
+        <p>Built for modern developers</p>
+        <div class="tech-labels">
+            <span>Python</span> &bull;
+            <span>Java</span> &bull;
+            <span>C</span> &bull;
+            <span>C++</span> &bull;
+            <span>JavaScript</span>
+        </div>
+    </section>
+
+    <!-- D. Features Section -->
+    <section id="features" class="features">
+        <div class="section-header">
+            <h2>Everything You Need to <span class="gradient-text">Write Better Code</span></h2>
+            <p>From finding bugs to understanding them, CodeFix AI helps throughout the debugging process.</p>
+        </div>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🐛</div>
+                <h3>Bug Detection</h3>
+                <p>Find syntax, runtime, and potential logical problems automatically.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <h3>AI Code Review</h3>
+                <p>Get intelligent, human-readable feedback about your code.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💡</div>
+                <h3>Error Explanation</h3>
+                <p>Understand what went wrong in simple, plain language.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔧</div>
+                <h3>Automatic Fix Suggestions</h3>
+                <p>Get corrected code and possible solutions instantly.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Code Improvement</h3>
+                <p>Receive suggestions for readability and overall efficiency.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📋</div>
+                <h3>Review History</h3>
+                <p>Save and revisit previous code reviews whenever you need them.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- E. How It Works -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="section-header">
+            <h2>Debugging <span class="gradient-text">Made Simple</span></h2>
+        </div>
+        
+        <div class="steps-container">
+            <div class="step">
+                <div class="step-number">01</div>
+                <h3>Paste Your Code</h3>
+                <p>Enter or upload your source code directly into the editor.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">02</div>
+                <h3>AI Analyzes</h3>
+                <p>Our AI examines your code for errors and potential issues.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">03</div>
+                <h3>Understand Problem</h3>
+                <p>Get a clear explanation of what went wrong and why.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">04</div>
+                <h3>Fix & Improve</h3>
+                <p>Receive corrected code and improvement suggestions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- F. AI Review Preview -->
+    <section class="ai-preview">
+        <div class="dashboard-mockup">
+            <div class="dashboard-left">
+                <div class="dashboard-header">
+                    <h3>Your Code</h3>
+                </div>
+                <div class="code-editor-card" style="box-shadow: none;">
+                    <div class="editor-header">
+                        <div class="dot dot-red"></div>
+                        <div class="dot dot-yellow"></div>
+                        <div class="dot dot-green"></div>
+                    </div>
+                    <div class="editor-body">
+                        <span class="code-line"><span class="keyword">def</span> <span class="function">divide_numbers</span>(a, b):</span>
+                        <span class="code-line bug-highlight">    <span class="keyword">return</span> a / b</span>
+                        <span class="code-line"></span>
+                        <span class="code-line">print(divide_numbers(<span class="number">10</span>, <span class="number">0</span>))</span>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard-right">
+                <div class="dashboard-header">
+                    <h3>AI Review</h3>
+                </div>
+                <div class="bug-alert">
+                    <h4>🐛 Bug Detected</h4>
+                    <p><strong>Line 2:</strong> <code>ZeroDivisionError</code></p>
+                </div>
+                <h4>Explanation</h4>
+                <p style="margin-bottom: 1.5rem;">The program attempts to divide a number by zero. In Python, division by zero is undefined and raises an error.</p>
+                
+                <h4>Suggested Fix</h4>
+                <div class="fixed-code">
+                    <span class="keyword">def</span> <span class="function">divide_numbers</span>(a, b):<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span> b == <span class="number">0</span>:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> <span class="string">"Cannot divide by zero"</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> a / b
+                </div>
+                <span class="success-label">✓ Fixed Code Available</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- G. Benefits Section -->
+    <section id="about" class="benefits">
+        <div class="section-header">
+            <h2>Code With <span class="gradient-text">Confidence</span></h2>
+        </div>
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <div class="benefit-icon">⏱️</div>
+                <h3>Save Debugging Time</h3>
+                <p>Stop searching forums. Get answers instantly.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">📈</div>
+                <h3>Learn from Mistakes</h3>
+                <p>Understand the root cause to become a better developer.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">✨</div>
+                <h3>Improve Code Quality</h3>
+                <p>Write cleaner, more efficient, and maintainable code.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- H. CTA Section -->
+    <section id="start" class="cta-section">
+        <div class="cta-content fade-in">
+            <h2>Ready to Fix Your Code <span class="gradient-text">Smarter?</span></h2>
+            <p>Start analyzing your code with AI and turn confusing errors into clear solutions today.</p>
+            <a href="#" class="btn btn-primary" style="font-size: 1.2rem; padding: 1rem 2rem;">Start Reviewing Code →</a>
+        </div>
+    </section>
+
+    <!-- I. Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <div class="footer-brand"><span style="color: var(--accent-color);">✨</span> CodeFix AI</div>
+                <p style="font-size: 0.9rem;">AI-powered code review and bug fixing.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#about">About</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 CodeFix AI. All rights reserved. (BCA Project)
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
